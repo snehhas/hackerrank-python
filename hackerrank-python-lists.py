@@ -1,0 +1,25 @@
+a=[]
+N=int(input())
+for i in range(N):
+    b=input().split()
+    while(b[0]=='insert'):
+        a.insert(int(b[1]),int(b[2]))
+        break
+    while(b[0]=='remove'):
+        a.remove(int(b[1]))
+        break
+    while(b[0]=='append'):
+        a.append(int(b[1]))
+        break
+    while(b[0]=='sort'):
+        a.sort()
+        break
+    while(b[0]=='pop'):
+        a.pop()
+        break
+    while(b[0]=='reverse'):
+        a.reverse()
+        break
+    while(b[0]=='print'):
+        print(a)
+        break
